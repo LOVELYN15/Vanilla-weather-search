@@ -27,6 +27,7 @@ section{
 }
 #temp {
     padding-left: 200px;
+    font-size: 100px;
 }
 #humidity {
     padding-left: 400px;
@@ -41,4 +42,7 @@ ul, li {
     list-style: none;
     display: inline;
     padding: 30px;
+}
+footer {
+    font-weight: 100;
 }
