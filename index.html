@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla Weather Search</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="part1">
+            <h1>City: Nairobi</h1>
+            <h2 class="newcolor">Day: Monday <br> Time: 12:24</h2>
+        </div>
+        <hr>
+        <div class="part2">
+            <div id="temp">
+                <p>Temperature <br> ⛅ 20°C</p>
+            </div>
+            <div id="humidity">
+                <p>Precipitation: 85% </p>
+            </div>
+            <div id="wind">
+                <p>Wind: 7Km/hr</p>
+            </div>
+        </div>
+        <hr>
+        <div class="days">
+            <p>Other Days of the week:-</p>
+            <ul>
+                <li>Tue: 🌨️10°C</li>
+                <li>Wed: 🌧️13°C</li>
+                <li>Thur: 🌩️12°C</li>
+                <li>Fri: 🌩️12°C</li>
+                <li>Sat: 🌨️11°C</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="weather-app">
+            <form class="search-form" id="search-form">
+                <div class="row">
+                  <div class="col-6">
+                    <input
+                      type="search"
+                      placeholder="Type a city.."
+                      autofocus="on"
+                      autocomplete="off"
+                      id="city-input"
+                      class="form-control shadow-sm"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      type="submit"
+                      value="Search"
+                      class="form-control btn btn-primary shadow-sm w-100"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <button
+                      class="btn btn-success w-100"
+                      id="current-location-button"
+                    >
+                      Current
+                    </button>
+                  </div>
+                </div>
+              </form>
+        </div>
+        <footer>
+            <p>This project was coded by Lovelyn Akoth and is open-sourced on <a href="">GitHub</a> and hosted on Netlify</p>
+        </footer>
+    <script src="index.js"></script>
+</body>
+</html>
